@@ -47,34 +47,34 @@ This is a simple GUI-based chat application implemented in Python. The applicati
    
 ## Technical Details
 
-•	The application uses the socket module to establish a network connection between the client and server.
+-	The application uses the socket module to establish a network connection between the client and server.
 
-•	It utilizes the threading module to enable concurrent execution of the GUI and message receiving functions.
+-	It utilizes the threading module to enable concurrent execution of the GUI and message receiving functions.
 
-•	The GUI is built using the tkinter library, which provides a user-friendly interface for the chat application.
+-	The GUI is built using the tkinter library, which provides a user-friendly interface for the chat application.
 
-•	The chat application follows a client-server architecture, where multiple clients can connect to a central server and exchange messages.
+-	The chat application follows a client-server architecture, where multiple clients can connect to a central server and exchange messages.
 
-•	Clients can choose a nickname upon connection, which will be displayed alongside their messages in the chat.
+-	Clients can choose a nickname upon connection, which will be displayed alongside their messages in the chat.
 
-•	The server runs on a specific host and port (in this case, '127.0.0.1' and 9090).
+-	The server runs on a specific host and port (in this case, '127.0.0.1' and 9090).
 
-•	The client application connects to the server by creating a socket and establishing a TCP connection.
+-	The client application connects to the server by creating a socket and establishing a TCP connection.
 
-•	The client's GUI is created using tkinter, with labels for chat history and message input, a text area for displaying chat messages, and a send button.
+-	The client's GUI is created using tkinter, with labels for chat history and message input, a text area for displaying chat messages, and a send button.
 
-•	The client GUI is responsive and interactive, allowing users to enter messages and send them to the server.
+-	The client GUI is responsive and interactive, allowing users to enter messages and send them to the server.
 
-•	Messages sent by the client are encoded as UTF-8 strings and sent over the socket connection to the server.
+-	Messages sent by the client are encoded as UTF-8 strings and sent over the socket connection to the server.
 
-•	The server receives messages from clients, decodes them, and broadcasts them to all connected clients.
+-	The server receives messages from clients, decodes them, and broadcasts them to all connected clients.
 
-•	The server keeps track of connected clients and their respective nicknames.
+-	The server keeps track of connected clients and their respective nicknames.
 
-•	The server uses multi-threading to handle multiple client connections concurrently.
+-	The server uses multi-threading to handle multiple client connections concurrently.
 
-•	Chat messages received by the client are displayed in the text area of the GUI, providing a real-time chat experience.
+-	Chat messages received by the client are displayed in the text area of the GUI, providing a real-time chat experience.
 
-•	The client application can be closed by the user, which will gracefully terminate the client's connection with the server and close the GUI window.
+-	The client application can be closed by the user, which will gracefully terminate the client's connection with the server and close the GUI window.
 
 
